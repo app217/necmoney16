@@ -1,0 +1,520 @@
+<!-- NEC MONEY | COMBINED HOME HERO + APK -->
+<section id="nec-combined-home">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@400;500;600;700;800&family=Manrope:wght@400;600;700;800&display=swap');
+
+#nec-combined-home{
+  --deep:#003b2d;
+  --green:#009b68;
+  --lime:#baff69;
+  font-family:'Anek Bangla','Manrope',sans-serif;
+  color:#fff;
+  background:radial-gradient(ellipse at 70% 80%,#00865a 0%,transparent 55%),linear-gradient(145deg,#00392e,#00513c);
+  border-radius:28px;
+  overflow:hidden;
+  position:relative;
+  isolation:isolate;
+  width:100%;
+  box-sizing:border-box;
+}
+#nec-combined-home *{box-sizing:border-box}
+#nec-combined-home:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(#ffffff08 1px,transparent 1px),
+    linear-gradient(90deg,#ffffff08 1px,transparent 1px);
+  background-size:65px 65px;
+  pointer-events:none;
+  z-index:-1;
+}
+#nec-combined-home a{text-decoration:none}
+#nec-combined-home button{cursor:pointer;font:inherit}
+
+/* HEADER */
+#nec-combined-home .nch-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  padding:16px 4%;
+  background:#ffffff08;
+  border-bottom:1px solid #ffffff16;
+}
+#nec-combined-home .nch-brand{
+  display:flex;align-items:center;gap:12px;
+}
+#nec-combined-home .nch-brand-icon{
+  display:grid;place-items:center;
+  width:54px;height:54px;
+  border-radius:14px;
+  background:#009b54;
+  font-size:28px;
+}
+#nec-combined-home .nch-brand b{
+  display:block;
+  font:800 27px 'Manrope',sans-serif;
+  line-height:1.2;
+}
+#nec-combined-home .nch-brand small{
+  display:block;
+  font:600 10px 'Manrope',sans-serif;
+  letter-spacing:2px;
+  margin-top:4px;
+  color:#d1f4e1;
+}
+#nec-combined-home .nch-controls{
+  display:flex;gap:9px;
+}
+#nec-combined-home .nch-controls button{
+  color:white;
+  background:#ffffff12;
+  border:1px solid #ffffff45;
+  border-radius:12px;
+  padding:10px 15px;
+  min-height:43px;
+}
+#nec-combined-home .nch-menu{
+  display:none;
+  background:#004934;
+  padding:14px 5%;
+  border-bottom:1px solid #ffffff25;
+}
+#nec-combined-home .nch-menu.open{display:block}
+#nec-combined-home .nch-menu a{
+  color:white;display:inline-block;
+  padding:8px 14px;
+}
+
+/* HERO CONTENT */
+#nec-combined-home .nch-body{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 22px 0;
+  text-align:center;
+}
+#nec-combined-home .nch-pill{
+  display:inline-block;
+  border:1px solid #86e6b1;
+  color:#d3ffe7;
+  border-radius:50px;
+  padding:9px 20px;
+  font-size:14px;
+}
+#nec-combined-home h1{
+  font-size:clamp(35px,6vw,76px);
+  line-height:1.22;
+  font-weight:800;
+  margin:27px auto 20px;
+  color:#fff;
+}
+#nec-combined-home h1 span{
+  display:block;color:var(--lime);
+}
+#nec-combined-home .nch-desc{
+  color:#d2f2e1;
+  font-size:clamp(15px,2vw,21px);
+  line-height:1.8;
+  max-width:800px;
+  margin:0 auto 25px;
+}
+#nec-combined-home .nch-countries{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:25px 0 30px;
+}
+#nec-combined-home .nch-country{
+  background:#ffffff12;
+  border:1px solid #ffffff25;
+  border-radius:50px;
+  padding:9px 17px;
+  font:600 13px 'Manrope',sans-serif;
+}
+
+/* APK DOWNLOAD */
+#nec-combined-home .nch-apk{
+  max-width:760px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  gap:18px;
+  text-align:left;
+  color:white;
+  padding:18px 23px;
+  border-radius:20px;
+  background:linear-gradient(125deg,#00bc76,#008d5b);
+  border:2px solid #8affbd;
+  box-shadow:0 10px 35px #00a36c55;
+  transition:transform .2s,box-shadow .2s;
+}
+#nec-combined-home .nch-apk:hover{
+  transform:translateY(-3px);
+  box-shadow:0 16px 40px #00a36c70;
+}
+#nec-combined-home .nch-android{
+  display:grid;place-items:center;
+  width:62px;height:62px;
+  flex-shrink:0;
+  border-radius:16px;
+  background:#ffffff20;
+  font-size:34px;
+}
+#nec-combined-home .nch-apk b{
+  display:block;
+  font-size:clamp(22px,3vw,32px);
+  line-height:1.25;
+}
+#nec-combined-home .nch-apk small{
+  display:block;
+  font:500 13px 'Manrope',sans-serif;
+  margin-top:5px;
+}
+#nec-combined-home .nch-arrow{
+  margin-left:auto;
+  font-size:30px;
+}
+#nec-combined-home .nch-benefits{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px 22px;
+  margin:25px auto;
+  color:#d3f5e1;
+  font-size:13px;
+}
+#nec-combined-home .nch-benefits b{color:#aaff79}
+
+/* PHONE MOCKUPS */
+#nec-combined-home .nch-phones{
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  height:420px;
+  position:relative;
+  margin-top:25px;
+}
+#nec-combined-home .nch-phone{
+  width:230px;height:400px;
+  border:5px solid #182421;
+  border-radius:34px;
+  background:#111;
+  padding:7px;
+  box-shadow:0 15px 35px #001a155e;
+  overflow:hidden;
+}
+#nec-combined-home .nch-phone.first{
+  transform:translateX(17px);
+  z-index:2;
+}
+#nec-combined-home .nch-phone.second{
+  transform:translateX(-12px) translateY(-20px);
+}
+#nec-combined-home .nch-screen{
+  background:#f3fff8;
+  border-radius:23px;
+  height:100%;
+  overflow:hidden;
+  text-align:left;
+  color:#123b29;
+  font-family:'Manrope',Arial,sans-serif;
+}
+#nec-combined-home .nch-notch{
+  width:76px;height:15px;
+  background:#111;
+  border-radius:0 0 11px 11px;
+  margin:auto;
+}
+#nec-combined-home .nch-screen-head{
+  padding:21px 10px;
+  background:#008b4f;
+  color:white;
+  text-align:center;
+  font-weight:800;
+}
+#nec-combined-home .nch-balance{
+  margin:12px;
+  padding:16px;
+  background:#006e43;
+  color:white;
+  border-radius:13px;
+  font-size:12px;
+}
+#nec-combined-home .nch-balance b{
+  display:block;
+  font-size:20px;
+  margin-top:6px;
+}
+#nec-combined-home .nch-app-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px;
+  padding:10px;
+}
+#nec-combined-home .nch-app-grid div{
+  background:white;
+  border-radius:12px;
+  text-align:center;
+  padding:17px 5px;
+  color:#006f3e;
+  font-size:11px;
+  font-weight:700;
+  box-shadow:0 2px 8px #0000000c;
+}
+#nec-combined-home .nch-app-grid i{
+  display:block;
+  font-size:24px;
+  font-style:normal;
+  margin-bottom:6px;
+}
+#nec-combined-home .nch-rate{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:5px;
+  margin:8px;
+  padding:10px;
+  background:white;
+  border-radius:9px;
+  font-size:11px;
+  font-weight:700;
+}
+#nec-combined-home .nch-rate b{
+  color:white;
+  background:#008c4b;
+  border-radius:7px;
+  padding:7px;
+}
+#nec-combined-home .nch-wave{
+  position:relative;
+  z-index:3;
+  height:55px;
+  margin:-42px -22px 0;
+  border-radius:55% 55% 0 0;
+  background:linear-gradient(90deg,#008f52,#1bc575,#00814d);
+}
+#nec-combined-home .nch-note{
+  color:#d2eadf;
+  text-align:center;
+  font-size:11px;
+  padding:12px 20px 18px;
+  background:#00412f;
+  line-height:1.6;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  #nec-combined-home{border-radius:20px}
+  #nec-combined-home .nch-header{padding:12px}
+  #nec-combined-home .nch-brand-icon{
+    width:44px;height:44px;font-size:24px;
+  }
+  #nec-combined-home .nch-brand b{font-size:20px}
+  #nec-combined-home .nch-brand small{
+    font-size:8px;letter-spacing:1px;
+  }
+  #nec-combined-home .nch-controls button{
+    padding:8px 12px;
+  }
+  #nec-combined-home .nch-body{
+    padding:40px 14px 0;
+  }
+  #nec-combined-home .nch-pill{font-size:12px}
+  #nec-combined-home .nch-country{
+    padding:8px 11px;font-size:11px;
+  }
+  #nec-combined-home .nch-apk{
+    gap:11px;
+    padding:14px;
+    border-radius:15px;
+  }
+  #nec-combined-home .nch-android{
+    width:48px;height:48px;font-size:26px;
+  }
+  #nec-combined-home .nch-apk small{font-size:11px}
+  #nec-combined-home .nch-arrow{font-size:23px}
+  #nec-combined-home .nch-benefits{
+    font-size:11px;gap:8px 12px;
+  }
+  #nec-combined-home .nch-phones{height:305px}
+  #nec-combined-home .nch-phone{
+    width:165px;height:300px;
+    border-radius:25px;
+    padding:5px;
+  }
+  #nec-combined-home .nch-screen{
+    border-radius:16px;
+  }
+  #nec-combined-home .nch-screen-head{
+    padding:14px 5px;
+    font-size:12px;
+  }
+  #nec-combined-home .nch-balance{
+    margin:7px;padding:10px;
+    font-size:9px;
+  }
+  #nec-combined-home .nch-balance b{font-size:14px}
+  #nec-combined-home .nch-app-grid{
+    gap:5px;padding:6px;
+  }
+  #nec-combined-home .nch-app-grid div{
+    padding:11px 2px;font-size:8px;
+  }
+  #nec-combined-home .nch-app-grid i{font-size:18px}
+  #nec-combined-home .nch-rate{
+    margin:5px;padding:6px 4px;
+    font-size:8px;
+  }
+  #nec-combined-home .nch-rate b{
+    padding:5px;font-size:8px;
+  }
+  #nec-combined-home .nch-wave{
+    margin:-35px -14px 0;
+  }
+}
+@media(max-width:360px){
+  #nec-combined-home .nch-phone{width:140px}
+  #nec-combined-home .nch-apk b{font-size:19px}
+}
+@media(prefers-reduced-motion:reduce){
+  #nec-combined-home .nch-apk{transition:none}
+}
+</style>
+
+<header class="nch-header">
+  <div class="nch-brand">
+    <div class="nch-brand-icon">🌐</div>
+    <div>
+      <b>Necmoney</b>
+      <small>GLOBAL SUPPORT</small>
+    </div>
+  </div>
+  <div class="nch-controls">
+    <button type="button" id="nch-language">EN</button>
+    <button type="button" id="nch-toggle"
+      aria-label="Open menu"
+      aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<nav class="nch-menu" id="nch-menu">
+  <a href="#nch-start">Home</a>
+  <a href="#nch-download">APK Download</a>
+</nav>
+
+<div class="nch-body" id="nch-start">
+  <span class="nch-pill" data-bn="💚 দ্রুত ও নিরাপদ রেমিট্যান্স তথ্য"
+    data-en="💚 Remittance Information & Support">
+    💚 দ্রুত ও নিরাপদ রেমিট্যান্স তথ্য
+  </span>
+
+  <h1>
+    <span class="nch-heading-first"
+      data-bn="প্রিয়জনের কাছে"
+      data-en="Send Love to">
+      প্রিয়জনের কাছে
+    </span>
+    <span class="nch-heading-second"
+      data-bn="ভালোবাসা পাঠান 💚"
+      data-en="Your Loved Ones 💚">
+      ভালোবাসা পাঠান 💚
+    </span>
+  </h1>
+
+  <p class="nch-desc"
+    data-bn="Necmoney — রেমিট্যান্স, এক্সচেঞ্জ রেট, অ্যাপ ডাউনলোড ও গ্রাহক সহায়তা এক জায়গায়।"
+    data-en="Necmoney — Remittance information, exchange rates, app downloads and customer support in one place.">
+    Necmoney — রেমিট্যান্স, এক্সচেঞ্জ রেট,
+    অ্যাপ ডাউনলোড ও গ্রাহক সহায়তা এক জায়গায়।
+  </p>
+
+  <div class="nch-countries">
+    <span class="nch-country">🇸🇦 Saudi Arabia</span>
+    <span class="nch-country">🇲🇻 Maldives</span>
+    <span class="nch-country">🇧🇩 Bangladesh</span>
+  </div>
+
+  <a class="nch-apk"
+    id="nch-download"
+    href="https://enecsend.com/necmoney.apk"
+    download>
+    <span class="nch-android">🤖</span>
+    <span>
+      <b data-bn="APK ডাউনলোড"
+         data-en="Download APK">APK ডাউনলোড</b>
+      <small>Direct Android Download</small>
+    </span>
+    <span class="nch-arrow">↓</span>
+  </a>
+
+  <div class="nch-benefits">
+    <span><b>✓</b> Android APK</span>
+    <span><b>✓</b> Direct Download</span>
+    <span><b>✓</b> Official Website</span>
+  </div>
+
+  <div class="nch-phones">
+    <div class="nch-phone first">
+      <div class="nch-screen">
+        <div class="nch-notch"></div>
+        <div class="nch-screen-head">NEC MONEY</div>
+        <div class="nch-balance">
+          Demo Balance
+          <b>BDT 12,500.00</b>
+        </div>
+        <div class="nch-app-grid">
+          <div><i>➤</i>Send Money</div>
+          <div><i>▣</i>Add Money</div>
+          <div><i>◷</i>History</div>
+          <div><i>●</i>Account</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nch-phone second">
+      <div class="nch-screen">
+        <div class="nch-notch"></div>
+        <div class="nch-screen-head">Sample Rates</div>
+        <div class="nch-rate">🇺🇸 USD → BDT <b>129.69</b></div>
+        <div class="nch-rate">🇸🇦 SAR → BDT <b>38.83</b></div>
+        <div class="nch-rate">🇦🇪 AED → BDT <b>35.80</b></div>
+        <div class="nch-rate">🇲🇾 MYR → BDT <b>34.90</b></div>
+        <div class="nch-rate">🇲🇻 MVR → BDT <b>8.94</b></div>
+      </div>
+    </div>
+  </div>
+  <div class="nch-wave"></div>
+</div>
+
+<div class="nch-note">
+  App screens, balance and rates are illustrative.
+  Verify current rates and services before transacting.
+</div>
+
+<script>
+(function(){
+  const root=document.getElementById('nec-combined-home');
+  if(!root)return;
+
+  const menu=root.querySelector('#nch-menu');
+  const toggle=root.querySelector('#nch-toggle');
+  const language=root.querySelector('#nch-language');
+  let lang='bn';
+
+  toggle.addEventListener('click',function(){
+    const open=menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded',String(open));
+  });
+
+  language.addEventListener('click',function(){
+    lang=lang==='bn'?'en':'bn';
+    root.querySelectorAll('[data-bn][data-en]').forEach(el=>{
+      el.textContent=el.getAttribute('data-'+lang);
+    });
+    language.textContent=lang==='bn'?'EN':'বাংলা';
+  });
+})();
+</script>
+</section>
